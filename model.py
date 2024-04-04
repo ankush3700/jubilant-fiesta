@@ -13,7 +13,7 @@ class EchoServerProtocol(asyncio.Protocol):
         resp = self.model(message)
         print('Send: {!r}'.format(f'{resp}'))
         self.transport.write(b'False')
-    // Do something here
+    # Do something here
     def model(self, domain):
         asyncio.sleep(1)
         return False
